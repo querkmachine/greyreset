@@ -1,0 +1,287 @@
+/* Grey's CSS Reset - by me, Grey. (http://furrified.com/)
+ * Combining, amongst my own changes, the very best of:
+ * HTML5 Doctor's CSS reset (http://html5doctor.com/html-5-reset-stylesheet/)
+ * The YUI 2 CSS Reset (http://developer.yahoo.com/yui/reset/)
+ * Nicolas Gallagher's Normalize.css (http://necolas.github.com/normalize.css/) 
+ * The best ampersand from Dan Cederholm (http://simplebits.com/notebook/2008/08/14/ampersands-2/)
+ * Clearfix from Position Is Everything (http://www.positioniseverything.net/easyclearing.html)
+ *
+ * HTML5 only. Get outta here, you decrepit old browsers.
+ *
+ */
+ 
+/* Generic elements */
+
+html, body, div, header, footer, section, article, aside, nav, menu, summary, figure, figcaption, details, p, hgroup, h1, h2, h3, h4, h5, h6, a, span, strong, em, b, i, small, abbr, address, code, del, ins, dfn, sup, sub, var, pre, kbd, samp, time, mark, img, audio, video, canvas, object, embed, iframe, blockquote, q, cite, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, thead, tbody, tfoot, tr, th, td, caption {
+	margin:0; padding:0;
+	border:none;
+	background:transparent;
+	font-size:inherit;
+	font-weight:normal;
+	font-style:normal;
+	vertical-align:baseline;
+}
+
+html {
+	overflow-y:scroll;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+}
+
+body {
+	line-height:1;
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+}
+
+header, footer, article, aside, section, nav, menu, hgroup, figure, figcaption, details { 
+	/* IE6-9, FF3 */
+	display:block;
+}
+
+/* Media */
+
+img, audio, video, canvas {
+	max-width:100%;
+	height:auto;
+}
+
+a img {
+	border:none;
+}
+
+img {
+	/* IE7 */
+	-ms-interpolation-mode:bicubic;
+}
+
+audio, video, canvas {
+	display:inline-block;
+	/* IE6-9, FF3 */
+	*display:inline;
+	*zoom:1;
+}
+
+audio:not([controls]) {
+	display:none;
+}
+
+svg:not(:root) {
+	/* IE9 */
+    overflow: hidden;
+}
+
+/* Hyperlinks */
+
+a:focus {
+	/* Chrome */
+	outline:thin dotted;
+}
+
+/* Inline elements */
+
+strong, b {
+	font-weight:bold;
+}
+
+em, i, dfn {
+	font-style:italic;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none;
+}
+
+small {
+	font-size:smaller;
+}
+
+del {
+	text-decoration:line-through;
+}
+
+ins {
+	text-decoration:underline;
+}
+
+sup, sub {
+	position:relative;
+	font-size:smaller;
+	line-height:0;
+	vertical-align:baseline;
+}
+
+sup {
+	top:-0.5em;
+}
+
+sub {
+	bottom:-0.25em;
+}
+
+pre {
+	white-space:pre;
+	white-space:pre-wrap;
+	word-wrap:break-word;
+}
+
+pre, code, kbd, samp {
+	font-size:1em;
+	font-family:"Lucida Console", Monaco, monospace;
+	/* IE6, S4-5, Chrome */
+	_font-family:"Courier New", monospace;
+}
+
+mark {
+	background-color:#ff9;
+	border-bottom:1px solid #FF0;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+
+/* Lists */
+
+ol, ul {
+	margin-left:1.5em;
+}
+
+nav ol, nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+/* Tables */
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+th, td, caption {
+	text-align:left;
+	vertical-align:top;
+}
+
+/* Forms */
+
+[hidden] {
+	/* IE7-9, FF3, S4 */
+	display:none;
+}
+
+input, button, textarea, select, option {
+	margin:0; 
+	padding:0;
+	border:1px solid;
+	background:transparent;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	vertical-align:baseline;
+	/* IE6-7 */
+	*vertical-align:middle;
+}
+
+select option {
+	border:none;
+}
+
+input, button {
+	/* FF3-4 */
+	line-height:normal;
+}
+
+input::-moz-focus-inner, buttton::-moz-focus-inner {
+	/* FF3-4 */
+	border:0;
+	padding:0;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor:pointer;
+	/* iOS */
+	-webkit-appearance:button;
+	/* IE7 */
+	*overflow:visible;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	/* IE8-9 */
+	box-sizing:border-box;
+	padding:0;
+}
+
+input[type="search"] {
+	/* FF, S5, Chrome */
+	-webkit-appearance:textfield;
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	/* S5, Chrome (OSX) */
+	-webkit-appearance:none;
+}
+
+textarea {
+	vertical-align:top;
+	/* IE6-9 */
+	overflow:auto;
+}
+
+legend {
+	color:inherit;
+	/* IE6-7 */
+	*margin-left:-7px;
+}
+
+/* Selection colours */
+
+::selection, ::-moz-selection, ::-webkit-selection {
+	background:#111;
+	color:#FFF;
+}
+
+/* Useful classes */
+
+.hide {
+	display:none;
+}
+
+/* The best ampersand for the job */
+.amp {
+	font-family: Baskerville, Palatino, "Book Antiqua", serif;
+	font-style:italic;
+	vertical-align:bottom;
+}
+
+/* Clearfix */
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+* html .clearfix { 
+	/* IE6 */
+	height:1%;
+}
+
+*:first-child+html .clearfix {
+	/* IE7 */
+	min-height:1px;
+}
