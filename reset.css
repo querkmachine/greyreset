@@ -35,7 +35,7 @@ body {
 	font-smoothing:antialiased;
 }
 
-header, footer, article, aside, section, nav, menu, hgroup, figure, figcaption, details { 
+header, footer, article, aside, section, nav, main, menu, hgroup, figure, figcaption, details { 
 	/* IE6-9, FF3 */
 	display:block;
 }
