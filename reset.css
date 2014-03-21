@@ -1,5 +1,5 @@
 /**
- * Grey's CSS Reset v3.1 (Modified: 16th February 2014)
+ * Grey's CSS Reset v3.2 (Modified: 21st March 2014)
  *
  * Combining, amongst my own changes, the very best of:
  * HTML5 Doctor's CSS reset (http://html5doctor.com/html-5-reset-stylesheet/)
@@ -256,7 +256,6 @@ input, button, textarea, select, optgroup {
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
-  -webkit-font-smoothing: antialiased;
   vertical-align: baseline;
   *vertical-align: middle; /* IE6-7 */
 }
